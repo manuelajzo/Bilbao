@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva la ruta de Pintxos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <script src="js/prefixfree.min.js"></script>
+</head>
+
+
+<body>
+    <div class="general">
+        <header>
+            <div class="header-reserva">
+                <div class="logo">
+                    <h1>
+                        Bilbao
+                    </h1>
+                </div>
+
+                <div class="naveg">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="tours.html">Tours</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="#" class="selected">Reserva</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+
+
+        <main>
+
+            <article class="reservas">
+                <h2>Descubra nuestro tour:</h2>
+                <iframe width="1200" height="675" src="https://www.youtube.com/embed/U4HUeQqFM94" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <p>
+                <strong> Descubra los mejores y más deliciosos pintxos de la región con nuestro Tour de Pintxos.</strong>Cada tour está pensado y diseñado especialmente para cada grupo, basándose en los gustos, preferencias y alergias de cada uno. ¡Coma y beba como un lugareño!     
+                 </p>
+                
+                
+            </article>
+                      
+
+            <form action="gracias.html" method="post" enctype="multipart/form-data">
+
+
+                <div class="formulario">
+
+                    <div class="titulo">
+                        <fieldset>
+                            <legend>¡Reserva tu lugar en nuestro Tour de Pintxos!</legend>
+                        </fieldset>
+                            
+                    </div>
+                    
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required />
+                    </div>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="nombre@mail.com" required />
+                    </div>
+
+                    <div>
+                        <label>Fecha:</label>
+                        <input type="date" name="fecha" required />
+                    </div>
+
+                    <div>
+                        <label for="personas">Cantidad de personas:</label>
+                        <select id="personas" name="personas">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>                        
+                    </div>
+
+                    <div>
+                        <label>Alergias o dietas especiales:</label> <br>
+                        <input type="checkbox" value="first_checkbox" name="lactosa" id="cbox1" />Lactosa <br>
+                        <input type="checkbox" value="second_checkbox" name="gluten" id="cbox2"/>Gluten <br>
+                        <input type="checkbox" name="chocolate" id="cbox3"/>Chocolate <br>
+                        <input type="checkbox" name="veganx" id="cbox4"/>Veganx <br>
+                        <input type="checkbox" name="vegetarianx" id="cbox5"/>Vegetarianx <br>
+                        <input type="checkbox" name="ninguna" id="cbox6" />Ninguna <br>
+                        <input type="checkbox" id="cbox7"/>Otra: <input type="text">
+                    </div>
+
+                    
+                    <div>
+                        <p>
+                            Si tiene un cupón de descuento, adjúntelo (imagen o PDF):
+                        </p>
+                        <input type="file" accept=".pdf, .jpg, .png">
+                    </div>
+
+                    <div>
+                        <label for="comentario">Comentarios adicionales</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+
+            </form>
+
+
+        </main>
+
+        <footer>
+            <div class="footcont">
+                <div class="footcol">
+                    <h4>Bilbao</h4>
+                    <ul>
+                        <li>Ernesto Erkoreka Plaza, 12, 48007 Bilbao, Bizkaia, España</li>
+                        <li>informacion@bilbaoturismo.bilbao.eus</li>
+                        <li>+34 944 01 00 10</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footcol">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="#">Reserva</a></li>
+                    </ul>
+                </div>
+
+                <div class="footcol">
+                    <ul>
+                        <li>Manuela Jaureguialzo</li>
+                        <li>Maquetado y Desarrollo Web - Mabel García</li>
+                        <li>DWN1B - 2020</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <p> &copy; Este sitio web es un trabajo de primer cuatrimestre de la Escuela Da Vinci (2020) </p>
+
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
